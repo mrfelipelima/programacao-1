@@ -1,6 +1,13 @@
+import { stdin } from 'node:process'
+
 let a = 2
 let b = -3
 let c = -5
+
+stdin.on('data', data => {
+    a = Number(data)
+    process.exit()
+})
 
 let delta = (b ** 2) - (4 * a * c)
 
