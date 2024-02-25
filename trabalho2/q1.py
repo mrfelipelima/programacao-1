@@ -6,6 +6,6 @@ for i in range(5):
     amount.append(input("Insira o saldo: "))
 
 print("===== LISTA DE CLIENTES =====")
-print("NOME", "SALDO", "CONTA")
+print("NOME", "\tSALDO", "\tCONTA")
 for i in range(5):
-    print(names[i-1], amount[i-1], "#", i)
+    print("{}".format(names[i-1]), "\t{}".format(amount[i-1]), "\t# {}".format(i))
