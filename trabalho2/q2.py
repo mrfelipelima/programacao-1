@@ -5,7 +5,7 @@ pesos = []
 alturas = []
 
 counter = 0
-data = input("(Digite 0 para sair)\nDigite o código do do cliente {}: ".format(counter + 1))
+data = input(f"(Digite 0 para sair)\nDigite o código do do cliente ({counter + 1}):")
 
 # Verifica se o usuário digitou 0 no primeiro código, caso sim, encerra o programa
 # pois não haverá dados para serem calculados.
@@ -24,15 +24,15 @@ while data:
     codigos.append(int(data))
 
     # Solicita o peso do cliente
-    data = input("Digite o peso do cliente {}: ".format(counter + 1))
+    data = input(f"Digite o peso do cliente ({counter + 1}):")
     # Inclui o peso no final da lista de pesos
     pesos.append(float(data))
-    data = input("Digite a altura do cliente {}: ".format(counter + 1))
+    data = input(f"Digite a altura do cliente ({counter + 1}):")
     alturas.append(float(data))
 
     counter += 1
     
-    data = input("(Digite 0 para sair)\nDigite o código do do cliente {}: ".format(counter + 1))
+    data = input(f"(Digite 0 para sair)\nDigite o código do do cliente ({counter + 1}):")
 
 # A função os.system foi chamada para limpar o console antes de apresentar os resultados
 os.system('cls' if os.name == 'NT' else 'clear')
